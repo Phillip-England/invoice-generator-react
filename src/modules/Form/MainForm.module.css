@@ -1,0 +1,148 @@
+.form{
+    background-color: white;
+    margin-left: var(--mar-sm);
+    margin-right: var(--mar-sm);
+    border-radius: var(--radius-sharp);
+    margin-bottom:var(--mar-sm);
+    display: grid;
+    padding: var(--pad-md);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'header'
+        'error'
+        'inputs'
+        'button'
+    ;
+}
+
+.header{
+    font-family: var(--secondary-font);
+    font-weight: var(--font-light);
+    font-size:var(--font-xl);
+    color:var(--main-color);
+    grid-area: header;
+    margin-bottom: var(--mar-xxs);
+}
+
+.errorWrapper{
+    color:var(--red);
+    font-family: var(--secondary-font);
+    grid-area: error;
+    display:flex;
+    border:solid var(--red) 1px;
+    border-radius: var(--radius-sharp);
+    background-color: var(--red);
+    padding-top: var(--pad-xxs);
+    padding-bottom: var(--pad-xxs);
+    padding-left:var(--pad-xs);
+    padding-right:var(--pad-xs);
+    margin-bottom:var(--mar-xs);
+    box-shadow: var(--main-box-shadow); 
+    /* display: none; */
+}
+
+.errorMessage{
+    align-self: center;
+    justify-self:center;
+    padding-left: var(--pad-sm);
+    font-size: var(--font-xs);
+    color:white;
+    width:fit-content;  
+}
+
+.iconWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: var(--radius-sharp);
+    border-top-left-radius: var(--radius-sharp);
+}
+
+.icon{
+    color:white;
+    border-bottom-left-radius: var(--radius-sharp);
+    border-top-left-radius: var(--radius-sharp);
+}
+
+.inputSection{
+    display: grid;
+    grid-area: inputs;
+}
+
+.inputWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-family: var(--third-font);
+    font-size:var(--font-sm);
+}
+
+.input{
+    margin-bottom:var(--mar-sm);
+    font-family: var(--third-font);
+    padding-left: var(--pad-xs);
+    font-size:var(--font-sm);
+    color:var(--main-color);
+    border-radius: var(--radius-sharp);
+    border:none;
+    background-color: var(--lightgray);
+}
+
+.input:focus{
+    outline:none;
+}
+
+.submit{
+    font-family: var(--secondary-font);
+    width: fit-content;
+    align-self: end;
+    justify-self: end;
+    font-size: var(--font-sm);
+    font-weight:var(--font-light);
+    background-color: var(--main-color);
+    border:none;
+    color:white;
+    border-radius: var(--radius-sharp);
+    box-shadow: var(--main-box-shadow);
+    grid-area: button;
+}
+
+.pause{
+    animation-play-state: paused;
+}
+
+.inputAnimationOn{
+    animation-name: inputAnimationOn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.inputAnimationOff{
+    animation-name: inputAnimationOff;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes inputAnimationOn {
+    from{
+        background-color: var(--lightgray);
+        box-shadow: none;
+    }
+    to{
+        background-color: var(--gray);
+        box-shadow: var(--main-box-shadow);
+    }
+}
+
+@keyframes inputAnimationOff {
+    from{
+        background-color:var(--gray);
+    }
+    to{
+        background-color: var(--lightgray);
+    }
+}

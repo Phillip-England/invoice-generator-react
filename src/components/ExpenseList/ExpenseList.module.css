@@ -1,0 +1,11 @@
+.spacer{
+    height:60px;
+}
+
+.sortHeader{
+    color:var(--main-dark);
+    font-family: var(--secondary-font);
+    font-weight:var(--font-light);
+    font-size:var(--font-lg);
+    padding-left: var(--pad-sm);
+}

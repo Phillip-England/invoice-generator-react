@@ -1,0 +1,34 @@
+.costPrintWrapper{
+    padding:var(--pad-sm);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height:60px;
+    background-color: var(--gray);
+}
+
+.cost{
+    margin-right: var(--mar-sm);
+    border-radius: var(--radius-sharp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondary-font);
+    font-size:var(--font-md);
+    background-color: var(--main-color);
+    color:white;
+    box-shadow: var(--main-box-shadow);
+}
+
+.printWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sharp);
+    background-color: var(--main-dark);
+    color:white;
+    box-shadow: var(--main-box-shadow);
+}

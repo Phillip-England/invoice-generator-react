@@ -1,0 +1,40 @@
+
+
+.header{
+    grid-area:header;
+    background-color: white;
+    margin-left: var(--mar-sm);
+    margin-right:var(--mar-sm);
+    margin-bottom:var(--mar-sm);
+    border-radius: var(--radius-sharp);
+    padding: var(--pad-sm);
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: 
+        'name date'
+        'description description'
+
+    ;
+}
+
+.headerName{
+    color:var(--main-color);
+    font-family: var(--secondary-font);
+    font-weight: var(--font-light);
+    font-size: var(--font-xl);
+}
+
+.headerDate{
+grid-area: date;
+align-self: center;
+justify-self: end;
+font-family: var(--third-font);
+font-size: var(--font-md);
+}
+
+.headerDescription{
+    grid-area: description;
+    margin-bottom:var(--mar-sm);
+    font-family: var(--secondary-font);
+}
+

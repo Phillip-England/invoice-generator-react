@@ -1,0 +1,30 @@
+.navtitle{
+    font-family: var(--secondary-font);
+    display: grid;
+    background-color: var(--main-color);
+    height:var(--nav-height);
+    box-shadow: var(--main-box-shadow);
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: var(--z-navbar);
+    grid-template-columns: 50px calc(100% - 50px);
+    grid-template-areas: "icon header";
+}
+
+.icon{
+    grid-area: icon;
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+
+.header{
+    font-family: var(--secondary-font);
+    font-size: var(--font-lg);
+    font-weight:var(--font-medium);
+    color:white;
+    grid-area: header;
+    align-self:center;
+    justify-self: center;
+}

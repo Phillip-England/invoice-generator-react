@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar/Navbar'
+import Form from './components/Form/Form'
+import InvoiceList from './components/InvoiceList/InvoiceList'
+import MainForm from './modules/Form/MainForm.module.css'
+import { useState } from 'react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Form 
+        styles={MainForm}
+        title={'Add a New Invoice'}
+        inputs={[
+            {key:0, name:'Name', active:''},
+            {key:1, name:'Description', active:''}
+        ]}
+      />
+      <InvoiceList/>
+    </>
   );
 }
 

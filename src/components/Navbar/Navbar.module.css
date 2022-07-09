@@ -1,0 +1,7 @@
+.navbar{
+    margin-bottom:var(--mar-sm);
+}
+
+.spacer{
+    height:var(--nav-height);
+}

@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Gentium+Book+Plus&family=Poppins:wght@300;400;500&display=swap');
+/*Z INDEX GUIDE*/
+/*
+    1 - Main Loader
+    2 - Page Overlay
+    3 - Navbar
+*/
+
+*{
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, html{
+    margin:0;
+    padding:0;
+    background-color:var(--gray);
+}
+
+h1, h2, h3, h4, h5, h6, ul, p{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    /*FONTS*/
+    --main-font: 'EB Garamond', serif;
+    --secondary-font: 'Poppins', sans-serif;
+    --third-font:'Gentium Book Plus', serif;
+    /*FONT SIZES*/
+    --font-xs: 0.8rem;
+    --font-sm: 1rem;
+    --font-md: 1.2rem;
+    --font-lg: 1.4rem;
+    --font-xl: 1.75rem;
+    /*FONT WEIGHTS*/
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    /*COLORS*/
+    --main-light:#00B6FF;
+    --main-color:#0E83FF;
+    --main-dark:#0068DF;
+    --main-darker:#004EBF;
+    --lightgray:#e0e0e0;
+    --gray:#d1d1d1;
+    --red:#F23F6B;
+    --yellow:#F9F871;
+    /*BOX-SHADOW*/
+    --main-box-shadow:1px 1px 2px black;
+    /*PADDING*/
+    --pad-xxs:0.25rem;
+    --pad-xs:0.5rem;
+    --pad-sm:0.75rem;
+    --pad-md:1rem;
+    --pad-lg:1.5rem;
+    /*MARGIN*/
+    --mar-xxs:0.25rem;
+    --mar-xs:0.5rem;
+    --mar-sm:0.75rem;
+    --mar-md:1rem;
+    --mar-ld:1.5rem;
+    /*HEIGHT*/
+    --nav-height:50px;
+    /*BORDER RADIUS*/
+    --radius-dull:15px;
+    --radius-sharp:5px;
+    /*Z-INDEX*/
+    --z-navbar:3;
+    --z-overlay:1;
+    --z-navmenu:2;
 }

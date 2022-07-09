@@ -1,0 +1,102 @@
+.menu{
+    background-color: var(--main-color);
+    position: fixed;
+    height:100vh;
+    top:0;
+    width:0vw;
+    z-index: var(--z-navmenu);
+    visibility: hidden;
+}
+
+.item{
+    font-family: var(--third-font);
+    font-size:var(--font-md);
+    padding:var(--pad-xs);
+    border-top: solid var(--lightgray) 3px;
+    border-bottom: solid var(--lightgray) 1px;
+    margin-left:var(--mar-md);
+    margin-right:var(--mar-md);
+    list-style: none;
+    border-radius: var(--radius-dull);
+    margin-bottom:var(--mar-md);
+}
+
+.link{
+    text-decoration: none;
+    display:flex;
+    color:white;
+    justify-content: center;
+    border-radius: var(--radius-dull);
+    height:50px;
+    width:100%;
+    align-items: center;
+    /* padding: var(--pad-sm); */
+}
+
+.activeLink{
+    text-decoration: none;
+    display:flex;
+    color:var(--main-color);
+    height:50px;
+    justify-content: center;
+    border-radius: var(--radius-dull);
+    width:100%;
+    align-items: center;
+    background-color: white;
+    box-shadow: var(--main-box-shadow);
+    /* padding: var(--pad-sm); */
+}
+
+
+.topSpace{
+    height:var(--nav-height);
+    width: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:var(--mar-md);
+}
+
+.pause{
+    animation-play-state: paused;
+}
+
+.animationOn{
+    animation-play-state: running;
+    animation-name: animateOn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.animationOff{
+    animation-play-state: running;
+    animation-name: animateOff;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateOn {
+    from {
+        width:0vw;
+        opacity: 0%;
+        visibility: hidden;
+    }
+    to {
+        width:66vw;
+        opacity: 100%;
+        visibility: visible;
+    }
+}
+
+@keyframes animateOff {
+    from {
+        width:66vw;
+        opacity: 100%;
+        visibility: visible;
+    }
+    to {
+        width:0vw;
+        opacity: 0%;
+        visibility: hidden;
+    }
+}

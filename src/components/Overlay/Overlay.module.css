@@ -1,0 +1,55 @@
+.overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background-color: white;
+    z-index: var(--z-overlay);
+    opacity: 0%;
+    visibility: hidden;
+}
+
+.paused{
+    animation-play-state: paused;
+}
+
+.animationOn{
+    animation-name: animateOn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+.animationOff{
+    animation-name: animateOff;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes animateOn {
+    from {
+        visibility: hidden;
+        background-color: white;
+        opacity: 0%;
+    }
+    to {
+        visibility: visible;
+        background-color: gray;
+        opacity: 50%;
+    }
+}
+
+@keyframes animateOff {
+    from {
+        visibility: visible;
+        background-color: gray;
+        opacity: 50%;
+    }
+    to {
+        visibility: hidden;
+        background-color: white;
+        opacity: 0%;
+    }
+}

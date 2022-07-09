@@ -1,0 +1,20 @@
+/*FONTS*/
+
+.font-main-md{
+    font-family: var(--main-font);
+    font-size: var(--font-md);
+}
+
+/*COLORS*/
+
+.clr-black{
+    color:black;
+}
+
+/*FLEX*/
+
+.flex-r-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
