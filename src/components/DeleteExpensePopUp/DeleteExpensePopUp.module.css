@@ -1,0 +1,82 @@
+.wrapper{
+    position:fixed;
+    top:calc(var(--nav-height) + 10px);
+    left:50%;
+    transform: translateX(-50%);
+    width: 95%;
+    background-color: white;
+    opacity: 0%;
+    z-index: var(--z-popup);
+    padding: var(--pad-sm);
+    border-radius: var(--radius-sharp);
+}
+
+.header{
+    font-family: var(--cairo);
+    color:var(--main-color);
+    font-size:var(--font-sm);
+    font-weight: var(--font-regular);
+    margin-bottom:var(--mar-xs);
+}
+
+.detail{
+    font-family: var(--roboto);
+    font-size:var(--font-xs);
+}
+
+.buttonWrapper{
+    display: flex;
+}
+
+.button{
+    background-color: var(--main-color);
+    border-radius: var(--radius-sharp);
+    border: none;
+    font-family: var(--roboto);
+    font-size: var(--font-xs);
+    color:white;
+    box-shadow: var(--main-box-shadow);
+    margin-top:var(--mar-sm);
+    padding-left:var(--pad-xs);
+    padding-right:var(--pad-xs);
+    padding-top: var(--pad-xxs);
+    padding-bottom: var(--pad-xxs);
+}
+
+.delete{
+    margin-right: var(--mar-sm);
+}
+
+.pause{
+    animation-play-state: paused;
+}
+
+.animationOn{
+    animation-name: animationOn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animationOn {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.animationOff{
+    animation-name: animationOff;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animationOff {
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}

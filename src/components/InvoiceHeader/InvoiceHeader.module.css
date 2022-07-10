@@ -7,6 +7,8 @@
     margin-right:var(--mar-sm);
     margin-bottom:var(--mar-sm);
     border-radius: var(--radius-sharp);
+    box-shadow: var(--main-box-shadow);
+    border-left: var(--border-0);
     padding: var(--pad-sm);
     display: grid;
     grid-template-columns: 5fr 1fr;

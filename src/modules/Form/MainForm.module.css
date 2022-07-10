@@ -6,6 +6,7 @@
     margin-bottom:var(--mar-sm);
     display: grid;
     padding: var(--pad-md);
+    box-shadow: var(--box-shadow-1);
     grid-template-columns: 1fr;
     grid-template-areas: 
         'header'
@@ -16,7 +17,7 @@
 }
 
 .header{
-    font-family: var(--secondary-font);
+    font-family: var(--cairo);
     font-weight: var(--font-light);
     font-size:var(--font-xl);
     color:var(--main-color);
@@ -26,7 +27,7 @@
 
 .errorWrapper{
     color:var(--red);
-    font-family: var(--secondary-font);
+    font-family: var(--roboto);
     grid-area: error;
     display:flex;
     border:solid var(--red) 1px;
@@ -37,7 +38,7 @@
     padding-left:var(--pad-xs);
     padding-right:var(--pad-xs);
     margin-bottom:var(--mar-xs);
-    box-shadow: var(--main-box-shadow); 
+    /* box-shadow: var(--main-box-shadow);  */
     /* display: none; */
 }
 
@@ -95,17 +96,21 @@
 }
 
 .submit{
-    font-family: var(--secondary-font);
+    font-family: var(--roboto);
     width: fit-content;
     align-self: end;
     justify-self: end;
     font-size: var(--font-sm);
     font-weight:var(--font-light);
     background-color: var(--main-color);
+    padding-top: var(--pad-xxs);
+    padding-bottom: var(--pad-xxs);
+    padding-left: var(--pad-xs);
+    padding-right: var(--pad-xs);
     border:none;
     color:white;
     border-radius: var(--radius-sharp);
-    box-shadow: var(--main-box-shadow);
+    /* box-shadow: var(--main-box-shadow); */
     grid-area: button;
 }
 

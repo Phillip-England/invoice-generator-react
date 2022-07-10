@@ -28,7 +28,7 @@ export default function InvoiceListItem({
             }
         >
             <div className={styles.itemHeader} onClick={() => {activateInvoice(invoice.key)}}>
-                <p className={styles.date}>{invoice.date}</p>
+                <p className={active ? styles.dateActive : styles.date}>{invoice.date}</p>
                 <p className={active ? styles.nameActive : styles.name}>{invoice.name}</p>
                 <i className={active ? `fa-solid fa-caret-down ${styles.iconActive}` : `fa-solid fa-caret-up ${styles.icon}`}></i>
             </div>

@@ -7,7 +7,7 @@
 body, html{
     margin:0;
     padding:0;
-    background-color:var(--gray);
+    /* background-color:var(--gray); */
 }
 
 h1, h2, h3, h4, h5, h6, ul, p{
@@ -41,9 +41,16 @@ h1, h2, h3, h4, h5, h6, ul, p{
     --lightgray:#e0e0e0;
     --gray:#d1d1d1;
     --red:#F23F6B;
+    --orange:#C93900;
     --yellow:#F9F871;
+    --green:#00884B;
     /*BOX-SHADOW*/
-    --main-box-shadow:1px 1px 2px black;
+    --main-box-shadow:1px 3px 5px black;
+    --box-shadow-0:1px 1px 40px var(--main-color);
+    --box-shadow-1:1px 1px 5px black;
+    /*BORDER*/
+    --border-0:solid var(--main-color) 3px;
+    --border-1:solid var(--orange) 3px;
     /*PADDING*/
     --pad-xxs:0.25rem;
     --pad-xs:0.5rem;
@@ -63,6 +70,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
     --radius-sharp:5px;
     /*Z-INDEX*/
     --z-navbar:99;
-    --z-overlay:97;
+    --z-overlay:96;
+    --z-popup:97;
     --z-navmenu:98;
 }
