@@ -3,9 +3,11 @@
 }
 
 .sortHeader{
-    color:var(--main-dark);
+    color:white;
     font-family: var(--secondary-font);
     font-weight:var(--font-light);
     font-size:var(--font-lg);
     padding-left: var(--pad-sm);
+    margin-bottom:var(--mar-xs);
+    background-color: rgb(162, 162, 162);
 }
