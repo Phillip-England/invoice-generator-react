@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Gentium+Book+Plus&family=Poppins:wght@300;400;500&display=swap');
-/*Z INDEX GUIDE*/
-/*
-    1 - Main Loader
-    2 - Page Overlay
-    3 - Navbar
-*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&family=EB+Garamond:wght@500&family=Gentium+Book+Plus&family=Poppins:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap');
 
 *{
     box-sizing: border-box;
@@ -26,7 +20,10 @@ h1, h2, h3, h4, h5, h6, ul, p{
     --main-font: 'EB Garamond', serif;
     --secondary-font: 'Poppins', sans-serif;
     --third-font:'Gentium Book Plus', serif;
+    --roboto:'Roboto', sans-serif;
+    --cairo:'Cairo', sans-serif;
     /*FONT SIZES*/
+    --font-xxs: 0.7rem;
     --font-xs: 0.8rem;
     --font-sm: 1rem;
     --font-md: 1.2rem;
@@ -65,7 +62,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
     --radius-dull:15px;
     --radius-sharp:5px;
     /*Z-INDEX*/
-    --z-navbar:3;
-    --z-overlay:1;
-    --z-navmenu:2;
+    --z-navbar:99;
+    --z-overlay:97;
+    --z-navmenu:98;
 }

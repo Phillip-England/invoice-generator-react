@@ -1,9 +1,12 @@
 import Expense from "../Expense/Expense"
 import styles from './ExpenseList.module.css'
+import graphics from './Graphics.module.css'
 import getAllProperties from '../../service/array/getAllProperties'
 import { useState } from "react"
 
-export default function ExpenseList() {
+export default function ExpenseList({
+    toggleDeleteBox
+}) {
 
     let expenseData = [
         {id: 0, invoice: 'June #1 2022', date:'01/01/2022', vendor: 'WalMart', category: 'Kitchen Supplies', description: 'Gym membership for David', cost: 250, isComplete: false},
@@ -33,31 +36,42 @@ export default function ExpenseList() {
         return copyOfArray
     }
 
-    const [expenses, setExpenses] = useState(addActiveAndAnimate(expenseData))
-    const [categories, setCategories] = useState(getAllProperties(expenses, 'category'))
-
     function activateExpense(key) {
         let copyOfExpenses = Object.assign([], expenses)
         copyOfExpenses.forEach(expense => {
             if (expense.id === key){
                 expense.active = !expense.active
+                if (expense.animate === null || expense.animate === false){
+                    expense.animate = true
+                } else {
+                    expense.animate = !expense.animate
+                }
             } else {
                 expense.active = false
+                expense.animate = false
             }
         })
         setExpenses(copyOfExpenses)
     }
 
+    const [expenses, setExpenses] = useState(addActiveAndAnimate(expenseData))
+    const [categories, setCategories] = useState(getAllProperties(expenses, 'category'))
+
     return(
         categories.map((category) => {
             return(
                 <div key={category}>
-                    <h2 className={styles.sortHeader}>{category}</h2>
+                    <div className={styles.sortHeaderWrapper}>
+                        <h2 className={styles.sortHeader}>{category}</h2>
+                        <div className={graphics.sortHeaderDecal_1}></div>
+                        <div className={graphics.sortHeaderDecal_2}></div>
+                    </div>
                     {getAllByProperty(expenses, 'category', category).map((expense) => 
                         <Expense
                             expense={expense}
                             key={expense.id}
                             activateExpense={activateExpense}
+                            toggleDeleteBox={toggleDeleteBox}
                         /> 
                     )}
                 </div>

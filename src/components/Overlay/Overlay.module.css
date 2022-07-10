@@ -10,7 +10,7 @@
     visibility: hidden;
 }
 
-.paused{
+.pause{
     animation-play-state: paused;
 }
 

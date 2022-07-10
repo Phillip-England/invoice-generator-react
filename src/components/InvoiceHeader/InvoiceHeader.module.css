@@ -19,7 +19,7 @@
 
 .headerName{
     color:var(--main-color);
-    font-family: var(--secondary-font);
+    font-family: var(--cairo);
     font-weight: var(--font-light);
     font-size: var(--font-xl);
 }
@@ -28,13 +28,14 @@
 grid-area: date;
 align-self: center;
 justify-self: end;
-font-family: var(--third-font);
-font-size: var(--font-md);
+font-family: var(--roboto);
+font-size: var(--font-xs);
 }
 
 .headerDescription{
     grid-area: description;
     margin-bottom:var(--mar-sm);
-    font-family: var(--secondary-font);
+    font-family: var(--roboto);
+    font-size:var(--font-xs);
 }
 

@@ -1,0 +1,17 @@
+.sortHeaderDecal_1{
+    position: absolute;
+    height:100%;
+    width: 1px;
+    top:0;
+    margin-left: calc(100% - 25px);
+    background-color: var(--main-color);
+}
+
+.sortHeaderDecal_2{
+    position: absolute;
+    height:100%;
+    width: 2px;
+    top:0;
+    margin-left: calc(100% - 20px);
+    background-color: var(--main-dark);
+}

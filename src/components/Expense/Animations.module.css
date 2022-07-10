@@ -1,0 +1,98 @@
+.pause{
+    animation-play-state: paused;
+}
+
+.play{
+    animation-play-state:running;
+}
+
+.wrapperAnimationOn{
+    animation-name: wrapperAnimationOn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.wrapperAnimationOff{
+    animation-name: wrapperAnimationOff;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wrapperAnimationOn {
+    from {
+        box-shadow: none;
+    }
+    to {
+        box-shadow:var(--main-box-shadow);
+    }
+}
+
+@keyframes wrapperAnimationOff {
+    from {
+        box-shadow:var(--main-box-shadow);
+    }
+    to {
+        box-shadow: none;
+    }
+}
+
+.hiddenAnimationOn{
+    animation-name: hiddenAnimationOn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.hiddenAnimationOff{
+    animation-name: hiddenAnimationOff;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hiddenAnimationOn {
+    from {
+        opacity:0%;
+    }
+    to {
+        opacity:100%;
+    }
+}
+
+@keyframes hiddenAnimationOff {
+    from {
+        opacity:100%;
+    }
+    to {
+        opacity:0%;
+    }
+}
+
+.showAnimationOn{
+    animation-name: showAnimationOn;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.showAnimationOff{
+    animation-name: showAnimationOff;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showAnimationOn {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--main-color);
+    }
+}
+
+@keyframes showAnimationOff {
+    from {
+        background-color: var(--main-color);
+    }
+    to {
+        background-color: white;
+    }
+}
+

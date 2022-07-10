@@ -2,12 +2,17 @@
     height:60px;
 }
 
+.sortHeaderWrapper{
+    position: relative;
+}
+
 .sortHeader{
     color:white;
-    font-family: var(--secondary-font);
+    font-family: var(--cairo);
     font-weight:var(--font-light);
-    font-size:var(--font-lg);
+    font-size:var(--font-md);
     padding-left: var(--pad-sm);
     margin-bottom:var(--mar-xs);
     background-color: rgb(162, 162, 162);
+    box-shadow: var(--main-box-shadow);
 }
