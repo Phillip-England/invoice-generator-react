@@ -7,12 +7,11 @@
 }
 
 .sortHeader{
-    color:white;
+    color:var(--main-dark);
     font-family: var(--cairo);
-    font-weight:var(--font-light);
+    font-weight:var(--font-medium);
     font-size:var(--font-md);
     padding-left: var(--pad-sm);
     margin-bottom:var(--mar-xs);
-    background-color: rgb(162, 162, 162);
-    box-shadow: var(--main-box-shadow);
+    background-color: var(--lightgray);
 }

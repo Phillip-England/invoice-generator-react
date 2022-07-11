@@ -36,9 +36,9 @@ export default function InvoiceListItem({
                 {active 
                     ?   
                         <>
-                            <div className={graphics.graphic_0}></div>
-                            <div className={graphics.graphic_1}></div>
-                            <div className={graphics.graphic_2}></div>
+                            {/* <div className={graphics.graphic_0}></div> */}
+                            {/* <div className={graphics.graphic_1}></div> */}
+                            {/* <div className={graphics.graphic_2}></div> */}
                         </>
                     : null}
             </div>

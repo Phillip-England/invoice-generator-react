@@ -19,19 +19,31 @@
 }
 
 @keyframes wrapperAnimationOn {
-    from {
+    0% {
+        opacity:100%;
         box-shadow: none;
     }
-    to {
-        box-shadow:var(--main-box-shadow);
+    30% {
+        opacity:30%;
+        box-shadow: var(--box-shadow-0);
+    }
+    100%    {
+        opacity: 100%;
+        box-shadow: none;
     }
 }
 
 @keyframes wrapperAnimationOff {
-    from {
-        box-shadow:var(--main-box-shadow);
+    0% {
+        opacity:100%;
+        box-shadow: none;
     }
-    to {
+    30% {
+        opacity:30%;
+        box-shadow: var(--box-shadow-0);
+    }
+    100%    {
+        opacity: 100%;
         box-shadow: none;
     }
 }
@@ -49,20 +61,26 @@
 }
 
 @keyframes hiddenAnimationOn {
-    from {
+    0% {
         opacity:0%;
     }
-    to {
-        opacity:100%;
+    30% {
+        opacity:30%;
+    }
+    100%    {
+        opacity: 100%;
     }
 }
 
 @keyframes hiddenAnimationOff {
-    from {
+    0% {
         opacity:100%;
     }
-    to {
-        opacity:0%;
+    30% {
+        opacity:30%;
+    }
+    100%    {
+        opacity: 0%;
     }
 }
 
@@ -80,19 +98,15 @@
 
 @keyframes showAnimationOn {
     from {
-        background-color: white;
     }
     to {
-        background-color: var(--main-color);
     }
 }
 
 @keyframes showAnimationOff {
     from {
-        background-color: var(--main-color);
     }
     to {
-        background-color: white;
     }
 }
 

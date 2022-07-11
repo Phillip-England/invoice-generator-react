@@ -17,7 +17,7 @@
 
 .header{
     font-family: var(--cairo);
-    font-weight: var(--font-light);
+    font-weight: var(--font-medium);
     font-size:var(--font-xl);
     color:var(--main-dark);
     grid-area: header;

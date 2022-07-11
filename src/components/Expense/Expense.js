@@ -14,7 +14,7 @@ export default function Expense({
             return `${styles.wrapper} ${animations.pause}`
         }
         if (expense.active === true && expense.animate === true){
-            return `${styles.wrapper} ${animations.play} ${animations.wrapperAnimationOn}`
+            return `${styles.wrapperActive} ${animations.play} ${animations.wrapperAnimationOn}`
         }
         if (expense.active === false && expense.animate === false){
             return `${styles.wrapper} ${animations.play} ${animations.wrapperAnimationOff}`

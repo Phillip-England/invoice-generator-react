@@ -19,8 +19,8 @@ export default function ExpenseList({
                 <div key={category}>
                     <div className={styles.sortHeaderWrapper}>
                         <h2 className={styles.sortHeader}>{category}</h2>
-                        <div className={graphics.sortHeaderDecal_1}></div>
-                        <div className={graphics.sortHeaderDecal_2}></div>
+                        {/* <div className={graphics.sortHeaderDecal_1}></div> */}
+                        {/* <div className={graphics.sortHeaderDecal_2}></div> */}
                     </div>
                     {getAllByProperty(expenses, 'category', category).map((expense) => 
                         <Expense

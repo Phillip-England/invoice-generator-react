@@ -3,6 +3,21 @@
     margin-bottom:var(--mar-xs);
     margin-left:var(--mar-xs);
     margin-right:var(--mar-xs);
+    border-top:solid var(--gray) 4px;
+    border-left:solid var(--gray) 2px;
+    border-bottom:solid var(--gray) 1px;
+    border-right:solid var(--gray) 1px;
+}
+
+.wrapperActive{
+    background-color: white;
+    margin-bottom:var(--mar-xs);
+    margin-left:var(--mar-xs);
+    margin-right:var(--mar-xs);
+    border-top:solid var(--gray) 1px;
+    border-left:solid var(--gray) 1px;
+    border-bottom:solid var(--gray) 4px;
+    border-right:solid var(--gray) 2px;
 }
 
 .show{
@@ -30,27 +45,27 @@
 .vendor{
     font-family: var(--cairo);
     font-size: var(--font-md);
-    font-weight: var(--font-light);
+    font-weight: var(--font-medium);
     grid-area:vendor;
     align-self: center;
     justify-self: center;
-    color:var(--main-color);
+    color:var(--main-dark);
 }
 
 .vendorActive{
     font-family: var(--cairo);
-    font-size: var(--font-md);
-    font-weight: var(--font-light);
+    font-size: var(--font-lg);
+    font-weight: var(--font-medium);
     grid-area:vendor;
     align-self: center;
     justify-self: center;
-    color:white;
+    color:var(--orange);
 }
 
 .cost{
     font-family:var(--roboto);
     font-size:var(--font-xs);
-    color:var(--main-color);
+    color:var(--main-dark);
     align-self: center;
     grid-area:cost;
 }
@@ -58,7 +73,7 @@
 .costActive{
     font-family:var(--roboto);
     font-size:var(--font-xs);
-    color:white;
+    color:var(--main-dark);
     align-self: center;
     grid-area:cost;
 }
@@ -86,7 +101,7 @@
     grid-template-columns: 2fr 4fr;
     align-items: center;
     padding: var(--pad-xs);
-    color:var(--main-color);
+    color:var(--main-dark);
 }
 
 .row:nth-child(odd){
@@ -110,12 +125,12 @@
 }
 
 .actions{
-    background-color: var(--main-dark);
+    border-top:dashed gray 1px;
     display: flex;
     padding:var(--pad-sm);
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .actionIcon{
-    color:white;
+    color:var(--main-dark);
 }

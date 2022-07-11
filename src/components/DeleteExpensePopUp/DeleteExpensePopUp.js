@@ -4,9 +4,8 @@ export default function DeleteExpensePopUp({
     popupClass,
     toggleDeleteBox,
     expenseToDelete,
+    deleteExpense,
 }) {
-
-    console.log(expenseToDelete)
 
     return(
         <div className={`${styles.wrapper} ${styles[popupClass]}`}>
@@ -16,7 +15,7 @@ export default function DeleteExpensePopUp({
             <p className={styles.detail}>{expenseToDelete.vendor}</p>
             <p className={styles.detail}>${expenseToDelete.cost}</p>
             <div className={styles.buttonWrapper}>
-                <button className={`${styles.delete} ${styles.button}`}>Delete</button>
+                <button className={`${styles.delete} ${styles.button}`} onClick={() => {deleteExpense(expenseToDelete.id)}}>Delete</button>
                 <button className={`${styles.cancel} ${styles.button}`} onClick={() => {toggleDeleteBox(false)}}>Cancel</button>
             </div>
         </div>

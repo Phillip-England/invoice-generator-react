@@ -30,12 +30,10 @@
 
 .button{
     background-color: var(--main-color);
-    border-radius: var(--radius-sharp);
     border: none;
     font-family: var(--roboto);
     font-size: var(--font-xs);
     color:white;
-    box-shadow: var(--main-box-shadow);
     margin-top:var(--mar-sm);
     padding-left:var(--pad-xs);
     padding-right:var(--pad-xs);
@@ -58,25 +56,37 @@
 }
 
 @keyframes animationOn {
-    from{
+    0%{
         opacity: 0%;
+        box-shadow: none;
     }
-    to{
+    30%{
+        opacity: 30%;
+        box-shadow: var(--box-shadow-0);
+    }
+    100%{
         opacity: 100%;
+        box-shadow: none;
     }
 }
 
 .animationOff{
     animation-name: animationOff;
-    animation-duration: 0.25s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes animationOff {
     from{
         opacity: 100%;
+        box-shadow: none;
+    }
+    30%{
+        opacity: 30%;
+        box-shadow: var(--box-shadow-0);
     }
     to{
         opacity: 0%;
+        box-shadow: none;
     }
 }

@@ -7,6 +7,7 @@ import Overlay from '../components/Overlay/Overlay'
 import DeleteExpensePopUp from '../components/DeleteExpensePopUp/DeleteExpensePopUp'
 
 import addActiveAndAnimate from "../service/state/addActiveAndAnimate"
+import sortArray from '../service/array/sortArray'
 
 import { useState } from 'react'
 
@@ -35,7 +36,18 @@ export default function SingleInvoice() {
             setPopupClass('animationOff')
             setExpenseToDelete(false)
         }
+    }
 
+    function deleteExpense(key) {
+        let copyOfExpenses = Object.assign([], expenses)
+        copyOfExpenses.forEach( (expense, index) => {
+            if (expense.id === key){
+                console.log(index)
+                copyOfExpenses.splice(index, 1)
+            }
+        })
+        setExpenses(copyOfExpenses)
+        toggleDeleteBox(false)
     }
 
     function activateExpense(key) {
@@ -56,10 +68,14 @@ export default function SingleInvoice() {
         setExpenses(copyOfExpenses)
     }
 
+    //sorting expense data
+    let sortedExpenses = sortArray(addActiveAndAnimate(expenseData), 'category')
+
     const [overlayClass, setOverlayClass] = useState('pause')
     const [popupClass, setPopupClass] = useState('pause')
     const [expenses, setExpenses] = useState(addActiveAndAnimate(expenseData))
     const [expenseToDelete, setExpenseToDelete] = useState(false)
+
 
     return(
         <>
@@ -88,6 +104,7 @@ export default function SingleInvoice() {
                 popupClass={popupClass}
                 toggleDeleteBox={toggleDeleteBox}
                 expenseToDelete={expenseToDelete}
+                deleteExpense={deleteExpense}
             />
         </>
     )

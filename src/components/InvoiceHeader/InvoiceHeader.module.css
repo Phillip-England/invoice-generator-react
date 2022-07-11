@@ -3,14 +3,11 @@
 .header{
     grid-area:header;
     background-color: white;
-    margin-left: var(--mar-sm);
-    margin-right:var(--mar-sm);
     margin-bottom:var(--mar-sm);
     border-radius: var(--radius-sharp);
-    box-shadow: var(--main-box-shadow);
-    border-left: var(--border-0);
     padding: var(--pad-sm);
     display: grid;
+    border-bottom: dashed gray 1px;
     grid-template-columns: 5fr 1fr;
     grid-template-areas: 
         'name date'
@@ -22,7 +19,7 @@
 .headerName{
     color:var(--main-color);
     font-family: var(--cairo);
-    font-weight: var(--font-light);
+    font-weight: var(--font-medium);
     font-size: var(--font-xl);
 }
 
