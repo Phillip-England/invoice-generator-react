@@ -1,9 +1,8 @@
 .navtitle{
-    font-family: var(--secondary-font);
     display: grid;
-    background-color: var(--main-color);
+    background-color: white;
     height:var(--nav-height);
-    box-shadow: var(--main-box-shadow);
+    box-shadow: var(--box-shadow-1);
     position: fixed;
     width:100%;
     top:0;
@@ -16,14 +15,14 @@
     grid-area: icon;
     align-self: center;
     justify-self: center;
-    color: white;
+    color: var(--main-dark);
 }
 
 .header{
-    font-family: var(--secondary-font);
+    font-family: var(--cairo);
     font-size: var(--font-lg);
     font-weight:var(--font-medium);
-    color:white;
+    color:var(--main-dark);
     grid-area: header;
     align-self:center;
     justify-self: center;

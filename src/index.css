@@ -7,7 +7,6 @@
 body, html{
     margin:0;
     padding:0;
-    /* background-color:var(--gray); */
 }
 
 h1, h2, h3, h4, h5, h6, ul, p{
@@ -46,8 +45,9 @@ h1, h2, h3, h4, h5, h6, ul, p{
     --green:#00884B;
     /*BOX-SHADOW*/
     --main-box-shadow:1px 3px 5px black;
-    --box-shadow-0:1px 1px 40px var(--main-color);
+    --box-shadow-0:1px 1px 20px var(--main-color);
     --box-shadow-1:1px 1px 5px black;
+    --box-shadow-2:1px 1px 2px black;
     /*BORDER*/
     --border-0:solid var(--main-color) 3px;
     --border-1:solid var(--orange) 3px;
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6, ul, p{
     /*HEIGHT*/
     --nav-height:50px;
     /*BORDER RADIUS*/
-    --radius-dull:15px;
+    --radius-dull:20px;
     --radius-sharp:5px;
     /*Z-INDEX*/
     --z-navbar:99;

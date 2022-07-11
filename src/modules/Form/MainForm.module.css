@@ -1,12 +1,11 @@
 .form{
     background-color: white;
-    margin-left: var(--mar-sm);
-    margin-right: var(--mar-sm);
-    border-radius: var(--radius-sharp);
+    /* margin-left: var(--mar-sm); */
+    /* margin-right: var(--mar-sm); */
     margin-bottom:var(--mar-sm);
+    border-bottom:dashed gray 1px;
     display: grid;
     padding: var(--pad-md);
-    box-shadow: var(--box-shadow-1);
     grid-template-columns: 1fr;
     grid-template-areas: 
         'header'
@@ -20,7 +19,7 @@
     font-family: var(--cairo);
     font-weight: var(--font-light);
     font-size:var(--font-xl);
-    color:var(--main-color);
+    color:var(--main-dark);
     grid-area: header;
     margin-bottom: var(--mar-xxs);
 }
@@ -39,7 +38,7 @@
     padding-right:var(--pad-xs);
     margin-bottom:var(--mar-xs);
     /* box-shadow: var(--main-box-shadow);  */
-    /* display: none; */
+    display: none;
 }
 
 .errorMessage{
@@ -76,17 +75,17 @@
 }
 
 .label{
-    font-family: var(--third-font);
-    font-size:var(--font-sm);
+    font-family: var(--cairo);
+    font-size:var(--font-xs);
 }
 
 .input{
     margin-bottom:var(--mar-sm);
-    font-family: var(--third-font);
-    padding-left: var(--pad-xs);
+    font-family: var(--roboto);
+    padding:var(--pad-xxs);
     font-size:var(--font-sm);
     color:var(--main-color);
-    border-radius: var(--radius-sharp);
+    border-bottom: solid white 1px;
     border:none;
     background-color: var(--lightgray);
 }
@@ -102,14 +101,13 @@
     justify-self: end;
     font-size: var(--font-sm);
     font-weight:var(--font-light);
-    background-color: var(--main-color);
+    background-color: var(--main-dark);
     padding-top: var(--pad-xxs);
     padding-bottom: var(--pad-xxs);
     padding-left: var(--pad-xs);
     padding-right: var(--pad-xs);
     border:none;
     color:white;
-    border-radius: var(--radius-sharp);
     /* box-shadow: var(--main-box-shadow); */
     grid-area: button;
 }
@@ -120,26 +118,36 @@
 
 .inputAnimationOn{
     animation-name: inputAnimationOn;
-    animation-duration: 0.25s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-play-state: running;
 }
 
 .inputAnimationOff{
     animation-name: inputAnimationOff;
-    animation-duration: 0.25s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-play-state: running;
 }
 
 @keyframes inputAnimationOn {
-    from{
+    0%{
         background-color: var(--lightgray);
         box-shadow: none;
+        border-bottom: solid white 1px;
+        opacity: 100%;
     }
-    to{
+    30%{
+        background-color: var(--lightgray);
+        box-shadow: var(--box-shadow-0);
+        border-bottom: solid white 1px;
+        opacity: 25%;
+    }
+    100%{
         background-color: var(--gray);
-        box-shadow: var(--main-box-shadow);
+        box-shadow: none;
+        border-bottom: solid var(--main-dark) 1px;
+        opacity: 100%;
     }
 }
 
