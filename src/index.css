@@ -57,6 +57,9 @@ h1, h2, h3, h4, h5, h6, ul, p{
     --pad-sm:0.75rem;
     --pad-md:1rem;
     --pad-lg:1.5rem;
+    --p-0:5px;
+    --p-1:7.5px;
+    --p-2:10px;
     /*MARGIN*/
     --mar-xxs:0.25rem;
     --mar-xs:0.5rem;

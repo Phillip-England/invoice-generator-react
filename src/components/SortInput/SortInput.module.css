@@ -1,0 +1,21 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--pad-sm);
+    padding-left:var(--pad-sm);
+    padding-right:var(--pad-sm);
+}
+
+.input{
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    height:25px;
+    border:inset gray 1px;
+}
+
+.header{
+    font-family: var(--cairo);
+    font-weight: var(--font-medium);
+    color:var(--orange);
+}

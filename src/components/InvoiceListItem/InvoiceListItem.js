@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import graphics from './Graphics.module.css'
 
 
 export default function InvoiceListItem({
@@ -33,14 +32,6 @@ export default function InvoiceListItem({
                 <p className={active ? styles.dateActive : styles.date}>{invoice.date}</p>
                 <p className={active ? styles.nameActive : styles.name}>{invoice.name}</p>
                 <i className={active ? `fa-solid fa-caret-down ${styles.iconActive}` : `fa-solid fa-caret-up ${styles.icon}`}></i>
-                {active 
-                    ?   
-                        <>
-                            {/* <div className={graphics.graphic_0}></div> */}
-                            {/* <div className={graphics.graphic_1}></div> */}
-                            {/* <div className={graphics.graphic_2}></div> */}
-                        </>
-                    : null}
             </div>
             {active ? 
                 <div className={styles.dropdown}>

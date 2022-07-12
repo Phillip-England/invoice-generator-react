@@ -88,6 +88,7 @@ export default function Expense({
                     <div className={styles.actions}>
                         <i className={`fa-solid fa-pen ${styles.actionIcon}`}></i>
                         <i className={`fa-solid fa-trash ${styles.actionIcon}`} onClick={() => {toggleDeleteBox(expense.id)}}></i>
+                        <i className={`fa-solid fa-plus ${styles.plusIcon} ${styles.actionIcon}`}></i>
                     </div>
                 </div>
             : null}

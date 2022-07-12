@@ -128,9 +128,19 @@
     border-top:dashed gray 1px;
     display: flex;
     padding:var(--pad-sm);
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .actionIcon{
     color:var(--main-dark);
+    padding:var(--p-2);
+    background-color: var(--lightgray);
+    border-radius: 100%;
+}
+
+.plusIcon{
+    color:var(--orange);
+    background-color: var(--lightgray);
+    border-radius: 100%;
+    padding:var(--p-2);
 }
